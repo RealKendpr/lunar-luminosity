@@ -15,6 +15,7 @@ h1 {
 .parent {
   display: grid;
   row-gap: 2rem;
+  align-items: center;
 }
 .box {
   background: lightgreen;
@@ -23,6 +24,9 @@ h1 {
   margin-inline: auto;
 
   & img {
-    object-fit: contain;
+    object-fit: cover;
+    width: 400px;
+    height: 250px;
+    /* aspect-ratio: 1 / 1; */
   }
 }
