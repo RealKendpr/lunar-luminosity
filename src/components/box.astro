@@ -1,5 +1,6 @@
 ---
 import img from "../imgs/img.jpeg";
+import Image from "astro/components/Image.astro";
 ---
 
 <div class="box">
@@ -8,5 +9,14 @@ import img from "../imgs/img.jpeg";
     loading="lazy"
     src={img.src}
     alt="Image 1 is not found if you can see this"
+  />
+</div>
+
+<div class="box">
+  <h2>Image inside the src/imgs, using the Astro's &lt;Image /&gt;</h2>
+  <Image
+    loading="lazy"
+    src={img}
+    alt="Image 1.1 is not found if you can see this"
   />
 </div>
